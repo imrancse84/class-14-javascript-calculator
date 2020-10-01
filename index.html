@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="calculator">
+		<input type="text" id="result" readonly>
+
+	<button type="buton" onclick="one()">1</button>
+	<button type="buton" onclick="two()">2</button>
+	<button type="buton" onclick="three()">3</button>
+	<button type="buton" onclick="four()">4</button>
+	<button type="buton" onclick="five()">5</button>
+	<button type="buton" onclick="six()">6</button>
+	<button type="buton" onclick="seven()">7</button>
+	<button type="buton" onclick="eight()">8</button>
+	<button type="buton" onclick="nine()">9</button>
+	<button type="buton" onclick="zero()">0</button>
+	<button type="buton" onclick="add()">+</button>
+	<button type="buton" onclick="sub()">-</button>
+	<button type="buton" onclick="mul()">*</button>
+	<button type="buton" onclick="dev()">/</button>
+	<button type="buton" onclick="equal()">=</button>
+	<button class="ac" type="buton" onclick="ac()">AC</button>
+	</div>
+
+
+<script>
+
+		function one(){
+			document.getElementById("result").value += 1;
+		}
+		function two(){
+			document.getElementById("result").value += 2;
+		}
+		function three(){
+			document.getElementById("result").value += 3;
+		}
+
+		function four(){
+			document.getElementById("result").value += 4;
+		}
+
+		function five(){
+			document.getElementById("result").value += 5;
+		}
+
+		function six(){
+			document.getElementById("result").value += 6;
+		}
+
+		function seven(){
+			document.getElementById("result").value += 7;
+		}
+
+		function eight(){
+			document.getElementById("result").value += 8;
+		}
+
+		function nine(){
+			document.getElementById("result").value += 9;
+		}
+		function zero(){
+			document.getElementById("result").value += 0;
+		}
+
+		function add(){
+			document.getElementById("result").value += "+";
+		}
+		function sub(){
+			document.getElementById("result").value += "-";
+		}
+		function dev(){
+			document.getElementById("result").value += "/";
+		}
+		function mul(){
+			document.getElementById("result").value += "*";
+		}
+		function ac(){
+			document.getElementById("result").value = "";
+		}
+
+		function equal(){
+			document.getElementById("result").value = eval(document.getElementById("result").value);
+
+		}
+
+
+</script>
+
+</body>
+</html>
